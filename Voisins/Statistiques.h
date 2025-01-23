@@ -37,6 +37,6 @@ namespace Statistiques
 	/// additionne toutes les mesures, ce que donne la distance Manhattan
 	/// </summary>
 	/// <param name="liste">Les nombres à additionner. Doit seulement contenir les mesures des cathètes</param>
-	/// <returns></returns>
+	/// <returns>la distance</returns>
 	float DistManhattan(std::vector<float> liste);
 };
