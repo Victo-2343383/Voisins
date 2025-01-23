@@ -1,4 +1,6 @@
 #include "Statistiques.h"
+#include <cmath>
+#include <vector>
 
 float Statistiques::Moyenne(std::vector<float> liste) {
 	float total{ 0 };
@@ -23,4 +25,19 @@ float Statistiques::Mediane(std::vector<float> liste) {
 		+
 		liste.at(length / 2)
 		)/2; 
+};
+float Statistiques::EcartType(std::vector<float> liste) {
+	//variables
+	float moy = Statistiques::Moyenne(liste);
+	int compte{ 0 };
+	int total{ 0 };
+
+	//calcul d'écart
+	for (int i = 0; i < liste.size(); i++) {
+		total += std::abs(liste.at(i) - moy);
+		compte++;
+	}
+
+	return std::sqrt((total) / (compte - 1));
+
 };
