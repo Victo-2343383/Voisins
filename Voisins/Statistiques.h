@@ -29,9 +29,14 @@ namespace Statistiques
 	/// <summary>
 	/// Fait un théorème de pythagore extensible pour trouver la distance entre deux ou plusieurs points
 	/// </summary>
-	/// <param name="liste">Les nombres sur lesquels effectuer les opérations</param>
+	/// <param name="liste">Les nombres sur lesquels effectuer les opérations. Doit seulement comprendre des mesures des cathètes</param>
 	/// <returns>la distance du point 1 à l'autre point</returns>
 	float DistEuclidienne(std::vector<float> liste);
 	
-	//float DistManhattan(std::vector<float> liste);
+	/// <summary>
+	/// additionne toutes les mesures, ce que donne la distance Manhattan
+	/// </summary>
+	/// <param name="liste">Les nombres à additionner. Doit seulement contenir les mesures des cathètes</param>
+	/// <returns></returns>
+	float DistManhattan(std::vector<float> liste);
 };
