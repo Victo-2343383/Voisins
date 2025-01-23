@@ -39,5 +39,12 @@ float Statistiques::EcartType(std::vector<float> liste) {
 	}
 
 	return std::sqrt((total) / (compte - 1));
-
 };
+
+float Statistiques::DistEuclidienne(std::vector<float> liste) {
+	float total{ 0 };
+	for (int i = 0; i < liste.size(); i++) {
+		total += std::pow(liste.at(i),2);
+	}
+	return std::sqrt(total);
+}

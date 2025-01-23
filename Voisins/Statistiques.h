@@ -26,7 +26,12 @@ namespace Statistiques
 	/// <returns>L'écart type</returns>
 	float EcartType(std::vector<float> liste);
 	
-	//float DistEuclidienne(std::vector<float> liste);
+	/// <summary>
+	/// Fait un théorème de pythagore extensible pour trouver la distance entre deux ou plusieurs points
+	/// </summary>
+	/// <param name="liste">Les nombres sur lesquels effectuer les opérations</param>
+	/// <returns>la distance du point 1 à l'autre point</returns>
+	float DistEuclidienne(std::vector<float> liste);
 	
 	//float DistManhattan(std::vector<float> liste);
 };
